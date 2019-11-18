@@ -1,4 +1,6 @@
-package sample;
+package sample.Chains;
+
+import sample.Chains.Chain;
 
 public class YardHandler implements Chain {
 
@@ -11,10 +13,11 @@ public class YardHandler implements Chain {
 
     @Override
     public double process(double distance) {
+        System.out.println(distance);
         double distInYards = distance * 1760;
         if(next == null)
             return distInYards;
         else
-            return next.process(distance);
+            return next.process(distInYards);
     }
 }

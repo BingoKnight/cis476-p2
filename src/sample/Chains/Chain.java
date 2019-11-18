@@ -1,4 +1,4 @@
-package sample;
+package sample.Chains;
 
 public interface Chain {
     public abstract void setNext(Chain next);

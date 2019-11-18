@@ -1,4 +1,6 @@
-package sample;
+package sample.Chains;
+
+import sample.Chains.Chain;
 
 public class MilesHandler implements Chain {
 
@@ -11,7 +13,7 @@ public class MilesHandler implements Chain {
 
     @Override
     public double process(double distance) {
-        double distInMiles = distance * 1.60934;
+        double distInMiles = distance * 0.621371;
         if(next == null)
             return distInMiles;
         else

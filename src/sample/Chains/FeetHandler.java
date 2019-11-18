@@ -1,4 +1,6 @@
-package sample;
+package sample.Chains;
+
+import sample.Chains.Chain;
 
 public class FeetHandler implements Chain {
 
@@ -11,6 +13,7 @@ public class FeetHandler implements Chain {
 
     @Override
     public double process(double distance) {
+        System.out.println(distance);
         double distInFeet = distance * 3;
         if(next == null)
             return distInFeet;

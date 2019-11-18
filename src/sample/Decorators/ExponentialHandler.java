@@ -1,8 +1,5 @@
 package sample.Decorators;
 
-import sample.Decorators.Decorator;
-import sample.Decorators.Distance;
-
 import java.text.DecimalFormat;
 
 public class ExponentialHandler extends Decorator {

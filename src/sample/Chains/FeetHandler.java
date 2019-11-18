@@ -1,7 +1,5 @@
 package sample.Chains;
 
-import sample.Chains.Chain;
-
 public class FeetHandler implements Chain {
 
     private Chain next = null;
